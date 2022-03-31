@@ -8,8 +8,8 @@ body {
 
 h1 {
   font-family: verdana, arial, sans-serif;
-  background-color: Red;
-  color: White; 
+  background-color: cyan;
+  color: darkblue; 
 }
 
 button {
@@ -61,9 +61,9 @@ button {
 }
 
 #startBtn {
-  background: darkgreen
+  background: green;
 }
 
 #stopBtn {
-  background: darkred
+  background: red;
 }
