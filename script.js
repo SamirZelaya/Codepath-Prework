@@ -116,8 +116,31 @@ function guess(btn){
     return;
   }
   
-  if ()
+  if(pattern(guessCounter) == btn){
+    //Guess is correct
+    if(guessCounter == progress)
     {
-      
+      if(progress == pattern.length - 1)
+      {
+        //Game end. You won.
+        winGame();
+      }
+      else
+      {
+        //Pattern correct. Add next segment
+        progress++;
+        playClueSequence();
+      }
     }
+    else
+    {
+      //Game continues
+      guessCounter++;
+    }
+  }
+  else
+  {
+    //Game end. Incorrect guess
+    loseGame();
+  }
 }
