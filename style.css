@@ -11,3 +11,14 @@ h1 {
   background-color: Red;
   color: White; 
 }
+
+button {
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:2px;
+}
