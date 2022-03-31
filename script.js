@@ -116,5 +116,8 @@ function guess(btn){
     return;
   }
   
-  // add game logic here
+  if ()
+    {
+      
+    }
 }
