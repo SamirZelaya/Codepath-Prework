@@ -119,6 +119,7 @@ function guess(btn){
   
   if(pattern[guessCounter] == btn){
     //Guess was correct!
+    
     if(guessCounter == progress){
       if(progress == pattern.length - 1){
         //GAME OVER: WIN!
