@@ -135,7 +135,7 @@ function guess(btn){
     }
     else
     {
-      //Correct. Game continues.
+      //Game continues.
       guessCounter++;
     }
   }
@@ -143,5 +143,7 @@ function guess(btn){
   {
     //Game end. Incorrect guess
     loseGame();
+    progress = 0;
+    guessCounter = 0;
   }
 }
