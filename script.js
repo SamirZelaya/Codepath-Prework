@@ -109,3 +109,12 @@ function winGame(){
   stopGame();
   alert("Game Over. You won.");
 }
+
+function guess(btn){
+  console.log("user guessed: " + btn);
+  if(!gamePlaying){
+    return;
+  }
+  
+  // add game logic here
+}
