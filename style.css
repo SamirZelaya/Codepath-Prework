@@ -1,4 +1,5 @@
-body {
+body
+{
   margin: 1rem;
   font-family: sans-serif;
   line-height: 1.5;
@@ -6,13 +7,15 @@ body {
   color: White; 
 }
 
-h1 {
+h1
+{
   font-family: verdana, arial, sans-serif;
   background-color: cyan;
   color: darkblue; 
 }
 
-button {
+button
+{
   padding: 15px;
   border-radius: 15px;
   color: white;
