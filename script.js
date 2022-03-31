@@ -112,29 +112,30 @@ function winGame(){
 
 function guess(btn){
   console.log("user guessed: " + btn);
+  
   if(!gamePlaying){
     return;
   }
   
-  if(pattern(guessCounter) == btn){
+  if(pattern[guessCounter] == btn){
     //Guess is correct
     if(guessCounter == progress)
     {
       if(progress == pattern.length - 1)
       {
-        //Game end. You won.
+        //Game end. You win.
         winGame();
       }
       else
       {
-        //Pattern correct. Add next segment
+        //Correct. Next pattern.
         progress++;
         playClueSequence();
       }
     }
     else
     {
-      //Game continues
+      //Correct. Game continues.
       guessCounter++;
     }
   }
