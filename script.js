@@ -9,6 +9,7 @@ var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;  //must be between 0.0 and 1.0
+var guessCounter = 0;
 
 function startGame(){
   //initialize game variables
@@ -89,6 +90,7 @@ function playSingleClue(btn){
 
 function playClueSequence(){
   context.resume()
+  var guessCounter = 0;
   let delay = nextClueWaitTime; //set delay to initial wait time
   for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
@@ -96,4 +98,14 @@ function playClueSequence(){
     delay += clueHoldTime 
     delay += cluePauseTime;
   }
+}
+
+function loseGame(){
+  stopGame();
+  alert("Game Over. You lost.");
+}
+
+function winGame(){
+  stopGame();
+  alert("Game Over. You won.");
 }
