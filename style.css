@@ -1,5 +1,4 @@
-body
-{
+body {
   margin: 1rem;
   font-family: sans-serif;
   line-height: 1.5;
@@ -7,15 +6,13 @@ body
   color: White; 
 }
 
-h1
-{
+h1 {
   font-family: verdana, arial, sans-serif;
   background-color: cyan;
   color: darkblue; 
 }
 
-button
-{
+button {
   padding: 15px;
   border-radius: 15px;
   color: white;
@@ -35,7 +32,7 @@ button
   background: lightgreen;
 }
 
-#button1:active {
+#button1:active, #button1.lit {
   background: green;
 }
 
@@ -43,7 +40,7 @@ button
   background: lightblue;
 }
 
-#button2:active {
+#button2:active, #button2.lit {
   background: blue;
 }
 
@@ -51,7 +48,7 @@ button
   background: lightpink;
 }
 
-#button3:active {
+#button3:active, #button3.lit {
   background: red;
 }
 
@@ -59,7 +56,7 @@ button
   background: lightyellow;
 }
 
-#button4:active {
+#button4:active, #button4.lit {
   background: yellow;
 }
 
